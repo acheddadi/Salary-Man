@@ -41,15 +41,42 @@
         "15952855-7813-4205-9c25-443c181adda4",
         "e82a2263-b7a0-41b0-9419-f054af5616bc",
         "80000926-50a1-47f8-9f07-9c3bf3504a0b",
-        "6fd1fe92-0774-48d0-9069-0c64a9ed83b0"
+        "6fd1fe92-0774-48d0-9069-0c64a9ed83b0",
+        "8c60fb93-424b-42d3-9417-b79cb4e05058"
     ],
     "layers": [
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "id": "5ad3add5-cc1f-489e-b1cf-80b4af0d4565",
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+                
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "name": "Text",
+            "userdefined_depth": false,
+            "visible": true,
+            "instances": [
+                
+            ]
+        },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "id": "91c2b068-2fcd-48ab-941a-2da957ec1367",
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "depth": 0,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -90,6 +117,30 @@
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
+                },
+                {
+                    "id": "8c60fb93-424b-42d3-9417-b79cb4e05058",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_12D60241",
+                    "x": 32,
+                    "y": 160,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_12D60241",
+                    "objId": "09368419-68cc-453c-879a-35efbdf1bdb1",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
                 }
             ]
         },
@@ -98,7 +149,7 @@
             "id": "fbbe1320-e075-4db7-ae08-fa3666bbc987",
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -891,7 +942,7 @@
             "id": "ebf9a7c4-97e4-4daf-b65d-a658ae3c08e4",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -928,7 +979,7 @@
             "id": "d438b5ee-a8c3-4fc9-983d-01df6316501d",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -965,7 +1016,7 @@
             "id": "f1f1b94d-334e-4acb-a6eb-272768e458c3",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -1002,7 +1053,7 @@
             "id": "e53ced9d-4a06-4454-adf1-65fa4a452662",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 500,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
