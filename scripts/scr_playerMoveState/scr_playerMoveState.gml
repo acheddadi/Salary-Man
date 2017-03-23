@@ -1,6 +1,8 @@
 // Keyboard input
 if (keyboard_check_pressed(vk_space))
 {
+	audio_play_sound(snd_jump, 1, false);
+	audio_sound_pitch(snd_jump, random_range(0.8, 1.2));
 	if (!flip) flip = true;
 	else flip = false;
 }

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+blockHeight = room_height / 12;
+
 timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
