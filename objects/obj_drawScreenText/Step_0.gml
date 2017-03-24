@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this edito
-if (timeElapsed == 30)
+if (timeElapsed == 15)
 {
 	if (draw) draw = false;
 	else
