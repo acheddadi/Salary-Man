@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "570f1825-13d3-49c6-8ac9-c44f9f90e1de",
+            "Value": {
+                "id": "731799af-d6a7-44a5-9be9-4e4393f44016",
+                "resourcePath": "objects\\obj_kickSpawn\\obj_kickSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b028b8b-5b91-4016-9ff2-eb31cc4d4a28",
             "Value": {
                 "id": "5743c80e-a8ae-47e5-9457-f603a522fed1",
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "923ba806-fadf-421b-b290-44a308886aed",
+            "Value": {
+                "id": "779eda34-0742-49b9-9329-4cf67f41cd3c",
+                "resourcePath": "objects\\obj_kick\\obj_kick.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "94598fc9-31b1-4681-9822-d3b6a3c0eec1",
             "Value": {
                 "id": "26b231eb-7132-42fa-8042-5ef3814ec1a0",
@@ -268,6 +284,22 @@
                 "id": "188519d4-871a-45a5-9590-1c9c694d6eeb",
                 "resourcePath": "objects\\obj_collision\\obj_collision.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "995cc47e-2ac8-4de9-9e4e-1716ed4a4f1e",
+            "Value": {
+                "id": "49ba5aa7-cb8b-4e89-9f82-54ef8a11a055",
+                "resourcePath": "sprites\\spr_null\\spr_null.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9eac5657-04b3-49a5-b53b-0eb8e226e837",
+            "Value": {
+                "id": "2f78113e-d7da-4541-a080-8035edbd9dc1",
+                "resourcePath": "sounds\\snd_kick\\snd_kick.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -412,6 +444,14 @@
                 "id": "f7a22cb7-f64c-4457-999f-f6c1b5ab40f5",
                 "resourcePath": "scripts\\scr_playerMoveState\\scr_playerMoveState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e4c04393-2f0c-4c46-a4e6-c30999ec99ce",
+            "Value": {
+                "id": "be5bac6c-2ef1-43b3-862b-b1e017e49ab5",
+                "resourcePath": "sprites\\spr_kick\\spr_kick.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
