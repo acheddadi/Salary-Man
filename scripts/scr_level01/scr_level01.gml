@@ -183,5 +183,10 @@ switch (timeSeconds)
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 		break;
 	}
+	case 31:
+	{
+		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+		break;
+	}
 //================================================================
 }

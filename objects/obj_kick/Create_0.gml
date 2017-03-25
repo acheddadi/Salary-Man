@@ -5,6 +5,8 @@ lastPlayerPosX = obj_player.x;
 lastPlayerPosY = obj_player.y;
 opacity = 1;
 
+image_xscale *= 1.5;
+image_yscale *= 1.5;
 image_angle = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
 direction = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
 speed = 20;

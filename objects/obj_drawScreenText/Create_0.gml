@@ -5,3 +5,5 @@ draw = false;
 drawCount = 0;
 timeElapsed = 0;
 spriteIndex = 0;
+
+enableText = false;
