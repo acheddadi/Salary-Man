@@ -13,4 +13,3 @@ image_xscale *= randomScale;
 image_yscale *= randomScale;
 
 dir = choose(true, false);
-collision = false;

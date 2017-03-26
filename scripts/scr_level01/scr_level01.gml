@@ -3,9 +3,9 @@ switch (timeSeconds)
 {
 //================================================================
 // Crowd of people
-	case 2:
+	case 2.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 		break;
 	}
 	case 3:
@@ -15,9 +15,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Incoming birds
-	case 4:
+	case 4.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 		break;
 	}
 	case 5:
@@ -27,9 +27,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Crowd of people
-	case 6:
+	case 6.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 		break;
 	}
 	case 7:
@@ -39,9 +39,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Incoming birds
-	case 8:
+	case 8.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 		break;
 	}
 	case 9:
@@ -61,10 +61,10 @@ switch (timeSeconds)
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 		break;
 	}
-	case 12:
+	case 12.5:
 	{
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down; // Crowd of people
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down"; // Crowd of people
 		break;
 	}
 //================================================================
@@ -76,10 +76,10 @@ switch (timeSeconds)
 	}
 //================================================================
 // Black Bruce Lee
-	case 14:
+	case 14.5:
 	{
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up; // Incoming birds
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up"; // Incoming birds
 		break;
 	}
 //================================================================
@@ -89,10 +89,10 @@ switch (timeSeconds)
 		instance_create_layer(0, 0, "Enemies", obj_birdSpawn);
 		break;
 	}
-	case 16:
+	case 16.5:
 	{
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down; // Crowd of people
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down"; // Crowd of people
 		break;
 	}
 //================================================================
@@ -104,9 +104,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Incoming birds
-	case 18:
+	case 18.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 		break;
 	}
 	case 19:
@@ -116,9 +116,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Crowd of people
-	case 20:
+	case 20.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 		break;
 	}
 	case 21:
@@ -128,9 +128,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Incoming birds
-	case 22:
+	case 22.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 		break;
 	}
 	case 23:
@@ -150,12 +150,16 @@ switch (timeSeconds)
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 		break;
 	}
+	case 25.5:
+	{
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
+		break;
+	}
 	case 26:
 	{
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 //================================================================
 // Crowd of people
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_down; 
 		instance_create_layer(0, 0, "Enemies", obj_crowdSpawn);
 		break;
 	}
@@ -169,9 +173,9 @@ switch (timeSeconds)
 	}
 //================================================================
 // Incoming birds
-	case 28:
+	case 28.5:
 	{
-		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = spr_up;
+		with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	}
 	case 29:
 	{
@@ -179,11 +183,6 @@ switch (timeSeconds)
 		break;
 	}
 	case 30:
-	{
-		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-		break;
-	}
-	case 31:
 	{
 		instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 		break;
