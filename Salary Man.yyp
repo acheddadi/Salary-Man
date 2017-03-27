@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "28996829-e77f-4a12-bec0-6bf051f74fa2",
+            "Value": {
+                "id": "cba524c7-bc0d-4084-bab0-efa907148364",
+                "resourcePath": "views\\28996829-e77f-4a12-bec0-6bf051f74fa2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2ee33777-642b-49b3-9857-9228bdbdd708",
             "Value": {
                 "id": "f36057c8-abcb-4b38-9637-5f1a4413094c",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "bd9d4560-ab41-4064-b99f-bf740fcf7462",
+            "Value": {
+                "id": "9e29dce9-efb0-42db-9947-37f6478481eb",
+                "resourcePath": "sprites\\spr_playerInvincible\\spr_playerInvincible.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c3c4832e-0441-44a5-b5ff-263cc330bfec",
             "Value": {
                 "id": "bff1b7d5-eb7c-44e5-ae18-07e0fb770d00",
@@ -532,6 +548,14 @@
                 "id": "bfd1c9b8-5e91-4a51-9684-2601443f213f",
                 "resourcePath": "objects\\obj_middle\\obj_middle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "df218a59-3787-4748-a9c7-0fad3c867a78",
+            "Value": {
+                "id": "17c7cfb3-c60b-4a07-b708-113a95fe4379",
+                "resourcePath": "scripts\\scr_playerAnimation\\scr_playerAnimation.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -612,6 +636,7 @@
         "cd242717-97f4-46ac-a3f1-fe47242fae51",
         "790c1c27-6f54-4096-96ef-f1d1e2e69061",
         "5bc48729-c4fc-405d-9807-00f7c318e162",
+        "df218a59-3787-4748-a9c7-0fad3c867a78",
         "cc740065-70f8-44a2-a2c4-9e72d67d2923"
     ],
     "tutorial": ""

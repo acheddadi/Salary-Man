@@ -4,3 +4,5 @@ script_execute(state);
 script_execute(shake);
 // Menu
 script_execute(menu);
+// Animation
+script_execute(animation);
