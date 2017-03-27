@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "eef1ec09-10a9-4669-9b2c-bfa9fa69698e",
+            "Value": {
+                "id": "cde43b26-7037-4630-a39c-22f88d5d52b0",
+                "resourcePath": "sounds\\snd_heart\\snd_heart.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f04f59af-850d-44b3-804f-8ffbc292944b",
             "Value": {
                 "id": "f17e6a78-604b-4d5b-8b15-3e85dffa79c8",
