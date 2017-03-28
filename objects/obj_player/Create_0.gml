@@ -21,6 +21,3 @@ state = scr_playerMoveState;
 
 // Animations
 animation = scr_playerAnimation;
-
-// Menu
-menu = scr_playerMenu;

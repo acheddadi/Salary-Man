@@ -6,7 +6,7 @@ x+= hspd;
 	
 // Terminal Velocity
 if (vspd < TERM_VEL) vspd += GRAV;
-	
+
 // Floor check
 if (place_meeting(obj_player.x, y + vspd, obj_collision))
 {

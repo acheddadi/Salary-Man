@@ -7,6 +7,7 @@ else
 {
 	if (playSound)
 	{
+		audio_sound_pitch(snd_kick, random_range(0.8, 1.2));
 		audio_play_sound(snd_kick, 1, false);
 		playSound = false;
 	}

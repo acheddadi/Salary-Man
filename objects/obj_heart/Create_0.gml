@@ -5,7 +5,7 @@ hspd = 0;
 vspd = 0;
 bspd = 0;
 
-MOVE_SPD = 10;
+MOVE_SPD = 25;
 GRAV = 5;
 TERM_VEL = 15;
 JUMP = 64;

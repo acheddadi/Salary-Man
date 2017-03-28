@@ -8,7 +8,7 @@ if (timeElapsed == delay)
 	{
 		draw = true;
 		drawCount++;
-		if (drawCount <= MAX_DRAW) audio_play_sound(snd_alert, 1, false);
+		if (drawCount <= MAX_DRAW) audio_play_sound(snd_alert, 0.5, false);
 	}
 	timeElapsed = 0;
 }

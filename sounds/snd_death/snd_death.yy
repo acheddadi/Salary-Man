@@ -1,8 +1,8 @@
 {
-    "id": "eef1ec09-10a9-4669-9b2c-bfa9fa69698e",
+    "id": "a70fb0ce-5542-4170-8e9b-46f6f30ded6c",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_heart",
+    "name": "snd_death",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.4
+    "volume": 0.5
 }

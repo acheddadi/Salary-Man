@@ -8,4 +8,10 @@ timeMinutes = timeSeconds / 60;
 timer = floor(timeSeconds);
 
 // Main timeline
-script_execute(level);
+if (instance_exists(obj_player)) script_execute(level);
+
+// Menu
+script_execute(menu);
+
+// Check if player still alive
+if (!instance_exists(obj_player)) gameover = true;
