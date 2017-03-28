@@ -1,8 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 playSound = true;
-lastPlayerPosX = obj_player.x;
-lastPlayerPosY = obj_player.y;
+if (instance_exists(obj_player))
+{
+	lastPlayerPosX = obj_player.x;
+	lastPlayerPosY = obj_player.y;
+}
+else
+{
+	lastPlayerPosX = 0;
+	lastPlayerPosY = 0;
+}
 opacity = 1;
 
 image_xscale *= 1.5;
