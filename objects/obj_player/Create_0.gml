@@ -14,7 +14,7 @@ flip = false;
 // Collision
 invincibility = false;
 heart = true;
-shake = scr_playerShake;
+shake = scr_shake;
 
 // Player state
 state = scr_playerMoveState;
