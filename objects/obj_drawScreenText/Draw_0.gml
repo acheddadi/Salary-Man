@@ -16,5 +16,9 @@ if (draw)
 		draw_sprite(spr_incoming, 0, room_width / 2, (room_height / 2) - 170);
 		draw_sprite(spr_incoming, 0, room_width / 2, (room_height / 2) + 170);
 		break;
+		
+		case "checkpoint":
+		draw_sprite(spr_checkpoint, 0, room_width / 2, room_height / 2);
+		break;
 	}
 }

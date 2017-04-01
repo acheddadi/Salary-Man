@@ -4,14 +4,17 @@
 // Initialize variables
 speedUp = false;
 gameover = false;
-timeSinceGameOver = 0;
 blockHeight = room_height / 12;
+gamespeed = 1;
 
 timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
+timeSinceGameOver = 0;
+checkpoint = 0;
 
-gamespeed = 1;
+// Timer
+instance_create_layer(0, 0, "Text", obj_drawTimer);
 
 // Current level
 level = scr_level01;

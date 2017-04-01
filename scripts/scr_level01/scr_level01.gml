@@ -152,6 +152,10 @@ switch (timeSeconds)
 	case 28.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
+	
+	case 29:
+	checkpoint = timeElapsed;
+	break;
 //================================================================
 // Heart spawn
 	case 29.5:
@@ -317,7 +321,10 @@ switch (timeSeconds)
 	case 57.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
-
+	
+	case 58:
+	checkpoint = timeElapsed;
+	break;
 //================================================================
 // Heart spawn
 	case 59.5:
@@ -342,3 +349,11 @@ switch (timeSeconds)
 //===============================================================
 	
 }
+
+//===============================================================
+// Speed Up Phases
+//===============================================================
+
+if (timeSeconds < 30) gamespeed = 1;
+	else if ((timeSeconds >= 30) && (timeSeconds < 60)) gamespeed = 2;
+		else if (timeSeconds >= 60) gamespeed = 3;

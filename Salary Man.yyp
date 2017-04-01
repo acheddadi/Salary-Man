@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "cb20fe50-b792-4366-9501-e2aa914776b0",
+            "Value": {
+                "id": "5f76adba-1a18-4238-ab94-1204db82d142",
+                "resourcePath": "objects\\obj_drawGameover\\obj_drawGameover.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc740065-70f8-44a2-a2c4-9e72d67d2923",
             "Value": {
                 "id": "dfc989fa-d9d2-4c9f-907a-9ffd637d0d21",
@@ -723,6 +731,14 @@
             "Value": {
                 "id": "2289c2ae-48ee-4526-b939-27622af4e6b7",
                 "resourcePath": "objects\\obj_playerDeath\\obj_playerDeath.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f03d694b-88d8-4eae-888e-cc40fd8b1993",
+            "Value": {
+                "id": "deeb1e98-2ff7-499b-bd52-e0022630438e",
+                "resourcePath": "objects\\obj_drawTimer\\obj_drawTimer.yy",
                 "resourceType": "GMObject"
             }
         },
