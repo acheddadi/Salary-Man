@@ -154,7 +154,7 @@ switch (timeSeconds)
 	break;
 	
 	case 29:
-	checkpoint = timeElapsed;
+	scr_checkpoint();
 	break;
 //================================================================
 // Heart spawn
@@ -323,7 +323,7 @@ switch (timeSeconds)
 	break;
 	
 	case 58:
-	checkpoint = timeElapsed;
+	scr_checkpoint();
 	break;
 //================================================================
 // Heart spawn
@@ -349,11 +349,3 @@ switch (timeSeconds)
 //===============================================================
 	
 }
-
-//===============================================================
-// Speed Up Phases
-//===============================================================
-
-if (timeSeconds < 30) gamespeed = 1;
-	else if ((timeSeconds >= 30) && (timeSeconds < 60)) gamespeed = 2;
-		else if (timeSeconds >= 60) gamespeed = 3;

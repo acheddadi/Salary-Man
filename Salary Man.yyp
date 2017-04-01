@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "901bbbf5-dc21-4bf5-a16d-af0a8e35cfd4",
+            "Value": {
+                "id": "207b69fc-4ad1-48c3-a70f-a2edbbe1cafa",
+                "resourcePath": "scripts\\scr_checkpoint\\scr_checkpoint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "90e5d3c7-b5d0-4702-b5f8-fca12f153b8d",
             "Value": {
                 "id": "6e2260fb-a709-43f3-abc9-6cbe71f7b267",
@@ -735,6 +743,14 @@
             }
         },
         {
+            "Key": "efb18cfb-dfa6-43e0-8c06-8f74f5fddbf0",
+            "Value": {
+                "id": "a393307d-de10-4375-a72c-c88e0fac6262",
+                "resourcePath": "views\\efb18cfb-dfa6-43e0-8c06-8f74f5fddbf0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f03d694b-88d8-4eae-888e-cc40fd8b1993",
             "Value": {
                 "id": "deeb1e98-2ff7-499b-bd52-e0022630438e",
@@ -798,7 +814,8 @@
         "df218a59-3787-4748-a9c7-0fad3c867a78",
         "cc740065-70f8-44a2-a2c4-9e72d67d2923",
         "790c1c27-6f54-4096-96ef-f1d1e2e69061",
-        "c43c31a0-4adf-411e-9c95-e55a29b92474"
+        "c43c31a0-4adf-411e-9c95-e55a29b92474",
+        "901bbbf5-dc21-4bf5-a16d-af0a8e35cfd4"
     ],
     "tutorial": ""
 }

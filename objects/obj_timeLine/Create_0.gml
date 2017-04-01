@@ -6,6 +6,7 @@ speedUp = false;
 gameover = false;
 blockHeight = room_height / 12;
 gamespeed = 1;
+lastGamespeed = 1;
 
 timeElapsed = 0;
 timeSeconds = 0;

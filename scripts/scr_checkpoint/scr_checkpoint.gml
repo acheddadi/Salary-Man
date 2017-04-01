@@ -1,0 +1,2 @@
+checkpoint = timeElapsed;
+lastGamespeed = gamespeed;
