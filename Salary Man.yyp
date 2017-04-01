@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "9c3a07e4-d949-4317-bbe9-8954421f8c9e",
+            "Value": {
+                "id": "62e6ae7a-b4fa-4c36-9a87-83cf507745cf",
+                "resourcePath": "objects\\obj_kickTrail\\obj_kickTrail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9eac5657-04b3-49a5-b53b-0eb8e226e837",
             "Value": {
                 "id": "2f78113e-d7da-4541-a080-8035edbd9dc1",

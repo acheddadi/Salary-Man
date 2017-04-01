@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Move speed
+currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
+
 // Accelerate forward
 if (hspd < MOVE_SPD) hspd += ACCELERATION;
 

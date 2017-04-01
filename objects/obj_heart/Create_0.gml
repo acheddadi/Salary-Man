@@ -4,6 +4,7 @@
 hspd = 0;
 vspd = 0;
 bspd = 0;
+currentSpeed = 0;
 
 MOVE_SPD = 25;
 GRAV = 5;

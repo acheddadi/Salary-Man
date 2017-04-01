@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (hspd > (-MOVE_SPD)) hspd -= 0.05;
+// Move speed
+currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
+
+if (hspd > (-currentSpeed)) hspd -= 0.05;
 x+= hspd;
 	
 // Terminal Velocity

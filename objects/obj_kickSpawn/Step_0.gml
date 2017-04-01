@@ -3,14 +3,27 @@
 
 if (timeElapsed > 2)
 {
-	with (instance_create_layer(room_width + sprite_width, 384, "Enemies", obj_kick))
+	if (opacity == 1)
 	{
-		opacity = other.opacity;
-		lastPlayerPosX = other.lastPlayerPosX;
-		lastPlayerPosY = other.lastPlayerPosY;
-		image_angle = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
-		direction = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
-		speed = 20;
+		with (instance_create_layer(room_width + sprite_width, 384, "Enemies", obj_kick))
+		{
+			opacity = other.opacity;
+			lastPlayerPosX = other.lastPlayerPosX;
+			lastPlayerPosY = other.lastPlayerPosY;
+			image_angle = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
+			direction = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
+		}
+	}
+	else
+	{
+		with (instance_create_layer(room_width + sprite_width, 384, "Enemies", obj_kickTrail))
+		{
+			opacity = other.opacity;
+			lastPlayerPosX = other.lastPlayerPosX;
+			lastPlayerPosY = other.lastPlayerPosY;
+			image_angle = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
+			direction = point_direction(x, y, lastPlayerPosX, lastPlayerPosY);
+		}
 	}
 	spawnCount--;
 	opacity -= 0.2;

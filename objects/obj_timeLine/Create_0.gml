@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+// Initialize variables
 gameover = false;
 timeSinceGameOver = 0;
 blockHeight = room_height / 12;
@@ -7,6 +9,8 @@ blockHeight = room_height / 12;
 timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
+
+gamespeed = 1;
 
 // Current level
 level = scr_level01;
