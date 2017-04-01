@@ -173,4 +173,112 @@ switch (timeSeconds)
 	case 30:
 	speedUp = true;
 	break;
+//===============================================================
+// Black Bruce Lee Rapid Fire	
+	case 33.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 34:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 34.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 35:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 35.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+//===============================================================
+	case 36:
+	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
+	break;
+	
+	case 36.5:
+	instance_create_layer(0, 0, "Enemies", obj_crowdSpawn);
+	break;
+	
+	case 37:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 37.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 38:
+	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
+	break;
+	
+	case 38.5:
+	instance_create_layer(0, 0, "Enemies", obj_birdSpawn);
+	break;
+	
+	case 39:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 39.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 40:
+	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "both";
+	break;
+	
+	case 40.5:
+	instance_create_layer(0, 0, "Enemies", obj_birdSpawn);
+	instance_create_layer(0, 0, "Enemies", obj_crowdSpawn);
+	break;
+	
+//===============================================================
+// Black Bruce Lee Rapid Fire	
+	case 41.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 42:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 42.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 43:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 43.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+//================================================================
+// Heart spawn
+	case 44.5:
+	if (instance_exists(obj_player))
+	{
+		if ((obj_player.heart == false) && (!instance_exists(obj_heart)))
+		{
+			with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
+			{
+				JUMP = 0;
+				hspd = -10;
+			}
+		}
+	}
+	break;
+//===============================================================
+// Phase 3
+//===============================================================
+	case 45.5:
+	speedUp = true;
+	break;
+//===============================================================
+	
 }
