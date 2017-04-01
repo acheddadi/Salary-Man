@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2423bf1b-11e8-4528-9ee6-69ef0cc72f81",
+            "Value": {
+                "id": "db0ed00a-e0f3-417d-a248-fdc389dd7efc",
+                "resourcePath": "sounds\\snd_speedUp\\snd_speedUp.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2ee33777-642b-49b3-9857-9228bdbdd708",
             "Value": {
                 "id": "f36057c8-abcb-4b38-9637-5f1a4413094c",
@@ -319,10 +327,26 @@
             }
         },
         {
+            "Key": "90e5d3c7-b5d0-4702-b5f8-fca12f153b8d",
+            "Value": {
+                "id": "6e2260fb-a709-43f3-abc9-6cbe71f7b267",
+                "resourcePath": "objects\\obj_speedUpSpawn\\obj_speedUpSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "910cbdc1-ae1e-4608-8d63-89d4a73ce3e4",
             "Value": {
                 "id": "f164877e-37bc-4700-903e-57dc74ac65c9",
                 "resourcePath": "objects\\obj_bird\\obj_bird.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "915db2c2-89d3-42b1-8e51-1cca10189114",
+            "Value": {
+                "id": "26465d14-0594-4fee-bbdb-1fd2e5b8d6f8",
+                "resourcePath": "objects\\obj_speedUp\\obj_speedUp.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -551,6 +575,14 @@
             }
         },
         {
+            "Key": "c43c31a0-4adf-411e-9c95-e55a29b92474",
+            "Value": {
+                "id": "5ca5e32b-d605-479a-b5d2-4643d27344db",
+                "resourcePath": "scripts\\scr_speedUp\\scr_speedUp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c6439f11-e95c-4af4-bf44-ed2e339f9f4d",
             "Value": {
                 "id": "a7e990c0-510f-46e0-8fec-775928cc27ca",
@@ -596,6 +628,14 @@
                 "id": "17c7cfb3-c60b-4a07-b708-113a95fe4379",
                 "resourcePath": "scripts\\scr_playerAnimation\\scr_playerAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e01a9b45-24ac-4702-94b1-b45e79abd53b",
+            "Value": {
+                "id": "32a69c17-daa9-4b96-a711-65ac0e08f048",
+                "resourcePath": "sprites\\spr_speedUp\\spr_speedUp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -701,7 +741,8 @@
         "cd242717-97f4-46ac-a3f1-fe47242fae51",
         "df218a59-3787-4748-a9c7-0fad3c867a78",
         "cc740065-70f8-44a2-a2c4-9e72d67d2923",
-        "790c1c27-6f54-4096-96ef-f1d1e2e69061"
+        "790c1c27-6f54-4096-96ef-f1d1e2e69061",
+        "c43c31a0-4adf-411e-9c95-e55a29b92474"
     ],
     "tutorial": ""
 }

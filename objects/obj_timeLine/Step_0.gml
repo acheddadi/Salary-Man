@@ -15,3 +15,6 @@ script_execute(menu);
 
 // Check if player still alive
 if (!instance_exists(obj_player)) gameover = true;
+
+// Speed Up event
+scr_speedUp();

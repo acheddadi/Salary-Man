@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 // Initialize variables
+speedUp = false;
 gameover = false;
 timeSinceGameOver = 0;
 blockHeight = room_height / 12;
