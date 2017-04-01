@@ -5,7 +5,7 @@ if (heart) instance_destroy(other);
 else if(!invincibility)
 {
 	heart = true;
-	audio_sound_pitch(snd_kick, random_range(0.8, 1.2));
+	effect_create_above(ef_ring, x, y, 1, c_fuchsia);
 	audio_play_sound(snd_heart, 1, false);
 	instance_destroy(other);
 }
