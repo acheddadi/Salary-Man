@@ -4,4 +4,4 @@ heart = false;
 
 instanceNumber = 36;
 instanceDirection = 0;
-audio_play_sound(snd_death, 1, false);
+if (!audio_is_playing(snd_death)) audio_play_sound(snd_death, 1, false);

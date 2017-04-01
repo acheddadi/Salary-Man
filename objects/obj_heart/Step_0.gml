@@ -4,7 +4,7 @@
 // Move speed
 currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
 
-if (hspd > (-currentSpeed)) hspd -= 0.05;
+if (hspd > (-currentSpeed)) hspd -= 0.1;
 x+= hspd;
 	
 // Terminal Velocity
