@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-x = room_width / 2;
-y = room_height / 2;
+x = view_wport[0] / 2;
+y = view_hport[0] / 2;
