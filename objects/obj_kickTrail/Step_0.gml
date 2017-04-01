@@ -5,5 +5,5 @@
 currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
 
 speed = currentSpeed;
-if (x < (-sprite_width)) instance_destroy();
+if ((x < (-sprite_width)) || !instance_exists(obj_kick)) instance_destroy();
 image_alpha = opacity;

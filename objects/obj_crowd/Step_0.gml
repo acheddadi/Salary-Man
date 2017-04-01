@@ -5,7 +5,7 @@
 currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
 
 // Accelerate forward
-if (hspd < MOVE_SPD) hspd += ACCELERATION;
+if (hspd < currentSpeed) hspd += ACCELERATION;
 
 // Flip direction
 if (vspd == FLY_SPD) dir = false;

@@ -19,3 +19,15 @@ else
 if (x < (-sprite_width)) instance_destroy();
 
 image_alpha = opacity;
+
+// Explode
+if (explode)
+{
+
+	if (distance_to_point(lastPlayerPosX, lastPlayerPosY) < distanceToExplode)
+	{
+		audio_play_sound(snd_death, 1, false);
+		instance_create_layer(x, y, "Enemies", obj_kickExplosionSpawn);
+		instance_destroy();
+	}
+}

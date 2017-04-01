@@ -7,6 +7,7 @@ if (timeElapsed > 2)
 	{
 		with (instance_create_layer(room_width + sprite_width, 384, "Enemies", obj_kick))
 		{
+			explode = other.explode;
 			opacity = other.opacity;
 			lastPlayerPosX = other.lastPlayerPosX;
 			lastPlayerPosY = other.lastPlayerPosY;

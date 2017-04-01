@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "a8d861ff-b7e5-470f-8b3f-39b49eff6226",
+            "Value": {
+                "id": "493ab382-0b69-410c-97c0-103ae54b9d7b",
+                "resourcePath": "objects\\obj_kickExplosion\\obj_kickExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "586237c0-b44e-44f0-ac24-e1cec9c757f0",
@@ -647,6 +655,14 @@
             }
         },
         {
+            "Key": "e51317fd-fe7d-408a-8da5-ad3fe919ce1a",
+            "Value": {
+                "id": "2a407083-dbd3-4dd8-ab2d-693bfd1599a8",
+                "resourcePath": "objects\\obj_kickExplosionSpawn\\obj_kickExplosionSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e7994192-3d1c-49ef-89e7-cf16b9aae7f9",
             "Value": {
                 "id": "bee847c4-144a-494a-ae88-d8cc36413599",
@@ -732,6 +748,14 @@
                 "id": "66d99c13-bf00-4f14-b996-7c073b27a186",
                 "resourcePath": "views\\fc36d2e6-a66f-48e1-8fb2-1acfd1d5637a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ffc4fc50-2061-41d5-969a-35e9498139f2",
+            "Value": {
+                "id": "1495c5ff-f58f-4db2-a7cd-8d44be51958e",
+                "resourcePath": "sprites\\spr_kickExplosion\\spr_kickExplosion.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],

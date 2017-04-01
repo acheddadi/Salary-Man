@@ -13,3 +13,4 @@ else
 spawnCount = 5;
 timeElapsed = 60;
 opacity = 1;
+explode = false;

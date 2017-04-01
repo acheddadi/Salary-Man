@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+distanceToExplode = 600;
+explode = false;
 playSound = true;
 if (instance_exists(obj_player))
 {
