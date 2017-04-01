@@ -295,11 +295,27 @@
             }
         },
         {
+            "Key": "7f78895a-c55d-4edb-86e9-e2dd18f81cd9",
+            "Value": {
+                "id": "2c7011d1-d89c-4840-b30a-26f958c40384",
+                "resourcePath": "sounds\\snd_kickExplosion\\snd_kickExplosion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "82852075-c7ab-4eb6-a454-cba7c1b6287b",
             "Value": {
                 "id": "dc5a7cd1-a270-4c60-8cb2-2ffe4bdd7134",
                 "resourcePath": "sprites\\spr_collision\\spr_collision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "871d6e99-fa6e-4f33-a9ed-e8e330c9f541",
+            "Value": {
+                "id": "c12ea9bf-a466-4bc0-9f49-e0e44b02b4d2",
+                "resourcePath": "objects\\obj_kickExplosionTrail\\obj_kickExplosionTrail.yy",
+                "resourceType": "GMObject"
             }
         },
         {

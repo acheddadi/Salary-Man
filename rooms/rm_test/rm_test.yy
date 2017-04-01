@@ -291,7 +291,7 @@
             "colour": {
                 "Value": 4294967295
             },
-            "hspeed": -8,
+            "hspeed": 0,
             "htiled": true,
             "spriteId": "ad6bde0e-999e-409b-97b8-79cb7b4fedfb",
             "stretch": false,
@@ -328,7 +328,7 @@
             "colour": {
                 "Value": 4294967295
             },
-            "hspeed": -0.2,
+            "hspeed": 0,
             "htiled": true,
             "spriteId": "78fa6402-1926-4243-9bef-8108243d5a3d",
             "stretch": false,
@@ -365,7 +365,7 @@
             "colour": {
                 "Value": 4294967295
             },
-            "hspeed": -0.1,
+            "hspeed": 0,
             "htiled": true,
             "spriteId": "ad4a121b-1920-4059-8967-139dfdc166c7",
             "stretch": false,

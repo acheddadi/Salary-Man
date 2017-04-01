@@ -200,7 +200,7 @@ switch (timeSeconds)
 	break;
 	
 	case 38:
-	with(instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
+	instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)
 	break;
 	
 	case 38.5:
@@ -216,7 +216,7 @@ switch (timeSeconds)
 	break;
 	
 	case 40.5:
-	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
+	instance_create_layer(0, 0, "Enemies", obj_birdSpawn)
 	break;
 	
 	case 41:
@@ -248,6 +248,12 @@ switch (timeSeconds)
 	
 	case 47:
 	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
+	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
+	break;
+	
+	case 47.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 	
 	case 48:
@@ -261,37 +267,45 @@ switch (timeSeconds)
 	//================================================================
 // Crowd of people
 	case 50:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 	break;
 	
 	case 50.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Incoming birds
 	case 51.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	break;
 
 	case 52:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Crowd of people
 	case 53.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 	break;
 
 	case 54:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Incoming birds
 	case 55.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	break;
 
 	case 56:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 //================================================================
