@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "20acca82-d3be-4ce1-a5b2-b8771c12c92a",
+            "Value": {
+                "id": "fb0441a6-b5f4-4c5c-b8fe-974174f778b4",
+                "resourcePath": "objects\\obj_runningMan\\obj_runningMan.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2423bf1b-11e8-4528-9ee6-69ef0cc72f81",
             "Value": {
                 "id": "db0ed00a-e0f3-417d-a248-fdc389dd7efc",
@@ -559,6 +567,14 @@
             }
         },
         {
+            "Key": "b6fe1407-898b-4054-8c26-c9a11892231d",
+            "Value": {
+                "id": "a0ff2cf6-929a-4689-9c0b-e907567d98d8",
+                "resourcePath": "sprites\\spr_runningMan\\spr_runningMan.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8b3a587-0703-48a0-ac8c-593a7f39d722",
             "Value": {
                 "id": "0ccd1822-c25f-4e14-8523-ec4a73e0598c",
@@ -676,6 +692,14 @@
                 "id": "32a69c17-daa9-4b96-a711-65ac0e08f048",
                 "resourcePath": "sprites\\spr_speedUp\\spr_speedUp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0491aef-0b17-4e35-8b00-35b9d4a5a0e1",
+            "Value": {
+                "id": "13c2163b-48bb-4566-8b34-7b3b44589fe6",
+                "resourcePath": "views\\e0491aef-0b17-4e35-8b00-35b9d4a5a0e1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -2,6 +2,11 @@
 switch (timeSeconds)
 {
 //===============================================================
+// Boss chase
+	case 0.1:
+	with (instance_create_layer(0, 0, "BossBackground", obj_runningMan)) stopTime = 30;
+	break;
+//===============================================================
 // Phase 1
 //===============================================================
 	case 0.5:
@@ -152,7 +157,8 @@ switch (timeSeconds)
 	case 28.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
-	
+//===============================================================
+// Checkpoint
 	case 29:
 	scr_checkpoint();
 	break;
@@ -161,7 +167,7 @@ switch (timeSeconds)
 	case 29.5:
 	if (instance_exists(obj_player))
 	{
-		if ((obj_player.heart == false) && (!instance_exists(obj_heart)))
+		if (obj_player.heart == false)
 		{
 			with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
 			{
@@ -176,6 +182,7 @@ switch (timeSeconds)
 //===============================================================
 	case 30:
 	speedUp = true;
+	with (instance_create_layer(0, 0, "BossForeground", obj_runningMan)) stopTime = 30;
 	break;
 //===============================================================
 // Black Bruce Lee Rapid Fire	
@@ -330,7 +337,7 @@ switch (timeSeconds)
 	case 59.5:
 	if (instance_exists(obj_player))
 	{
-		if ((obj_player.heart == false) && (!instance_exists(obj_heart)))
+		if (obj_player.heart == false)
 		{
 			with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
 			{
@@ -345,6 +352,7 @@ switch (timeSeconds)
 //===============================================================
 	case 60:
 	speedUp = true;
+	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 80;
 	break;
 //===============================================================
 	
