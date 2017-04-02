@@ -10,11 +10,7 @@ switch (timeSeconds)
 // Phase 1
 //===============================================================
 	case 0.5:
-	with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
-	{
-		JUMP = 0;
-		hspd = -10;
-	}
+	scr_heartSpawn();
 	break;
 //================================================================
 // Crowd of people
@@ -151,7 +147,7 @@ switch (timeSeconds)
 	break;
 
 	case 28:
-	instance_create_layer(0, 0, "Enemies", obj_birdSpawn);
+	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 
 	case 28.5:
@@ -159,198 +155,178 @@ switch (timeSeconds)
 	break;
 //===============================================================
 // Checkpoint
-	case 29:
+	case 30:
 	scr_checkpoint();
 	break;
 //================================================================
 // Heart spawn
-	case 29.5:
-	if (instance_exists(obj_player))
-	{
-		if (obj_player.heart == false)
-		{
-			with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
-			{
-				JUMP = 0;
-				hspd = -10;
-			}
-		}
-	}
+	case 30.5:
+	scr_heartSpawn();
 	break;
 //===============================================================
 // Phase 2
 //===============================================================
-	case 30:
+	case 31:
 	speedUp = true;
 	with (instance_create_layer(0, 0, "BossForeground", obj_runningMan)) stopTime = 30;
 	break;
 //===============================================================
 // Black Bruce Lee Rapid Fire	
-	case 33.5:
-	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-	break;
-	
 	case 34.5:
-	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
 	case 35.5:
-	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-	break;
-	
-	case 36:
 	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
 	break;
 	
 	case 36.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
-//===============================================================
+	
+	case 37:
+	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
+	break;
+	
 	case 37.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+//===============================================================
+	case 38.5:
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 	break;
 	
-	case 38:
+	case 39:
 	instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)
 	break;
 	
-	case 38.5:
-	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
-	break;
-	
-	case 39:
+	case 39.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
 	case 40:
-	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
-	break;
-	
-	case 40.5:
-	instance_create_layer(0, 0, "Enemies", obj_birdSpawn)
-	break;
-	
-	case 41:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
+	case 41:
+	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
+	break;
+	
 	case 41.5:
+	instance_create_layer(0, 0, "Enemies", obj_birdSpawn)
+	break;
+	
+	case 42:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
 	case 42.5:
+	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
+	break;
+	
+	case 43.5:
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "both";
 	break;
 	
-	case 43:
+	case 44:
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	with (instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
 	break;
 	
 //===============================================================
 // Black Bruce Lee Rapid Fire	
-	case 45:
+	case 46:
 	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
 	break;
 	
-	case 46:
+	case 47:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
-	case 47:
+	case 48:
 	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	break;
 	
-	case 47.5:
+	case 48.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 	
-	case 48:
+	case 49:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
-	case 49:
+	case 50:
 	with (instance_create_layer(0, 0, "Enemies", obj_kickSpawn)) explode = true;
 	break;
 	
 	//================================================================
 // Crowd of people
-	case 50:
+	case 51:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 	break;
 	
-	case 50.5:
+	case 51.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Incoming birds
-	case 51.5:
+	case 52.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	break;
 
-	case 52:
+	case 53:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Crowd of people
-	case 53.5:
+	case 54.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "down";
 	break;
 
-	case 54:
+	case 55:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_crowdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Incoming birds
-	case 55.5:
+	case 56.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Text", obj_drawScreenText)) spriteIndex = "up";
 	break;
 
-	case 56:
+	case 57:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	with (instance_create_layer(0, 0, "Enemies", obj_birdSpawn)) spawnCount = 25;
 	break;
 //================================================================
 // Black Bruce Lee
-	case 57:
+	case 58:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 
-	case 57.5:
+	case 58.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
 	
-	case 58:
+	case 59:
 	scr_checkpoint();
 	break;
 //================================================================
 // Heart spawn
-	case 59.5:
-	if (instance_exists(obj_player))
-	{
-		if (obj_player.heart == false)
-		{
-			with (instance_create_layer(room_width, room_height / 2, "Instances", obj_heart))
-			{
-				JUMP = 0;
-				hspd = -10;
-			}
-		}
-	}
+	case 60.5:
+	scr_heartSpawn();
 	break;
 //===============================================================
 // Phase 3
 //===============================================================
-	case 60:
+	case 61:
 	speedUp = true;
 	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 80;
 	break;

@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "21d171ef-51ae-4430-b62c-77aab28e3341",
+            "Value": {
+                "id": "477fb84c-cc76-41c3-b0c3-178d5cbda064",
+                "resourcePath": "sprites\\spr_heartGold\\spr_heartGold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2423bf1b-11e8-4528-9ee6-69ef0cc72f81",
             "Value": {
                 "id": "db0ed00a-e0f3-417d-a248-fdc389dd7efc",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "7412f913-e2cc-4985-9a54-7b1e5d6f61cb",
+            "Value": {
+                "id": "785b4aac-b243-464d-99f2-0839a6e8c305",
+                "resourcePath": "scripts\\scr_heartSpawn\\scr_heartSpawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75b595bb-ab07-4ec2-bb36-1fa1d18220be",
             "Value": {
                 "id": "d9939a27-07f7-4774-b54d-8b004dbd9572",
@@ -316,6 +332,14 @@
                 "id": "dc5a7cd1-a270-4c60-8cb2-2ffe4bdd7134",
                 "resourcePath": "sprites\\spr_collision\\spr_collision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "85359069-5d64-47bb-8d55-462b2bcc2c34",
+            "Value": {
+                "id": "b48b6aee-a79d-431e-9be4-700237d85a92",
+                "resourcePath": "objects\\obj_heartGold\\obj_heartGold.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -671,6 +695,14 @@
             }
         },
         {
+            "Key": "ceaf3389-185d-4d3a-959c-a390f8a6055b",
+            "Value": {
+                "id": "6fd8f2a0-8bc9-4cf0-8955-45f00ea2e441",
+                "resourcePath": "sounds\\snd_goldLose\\snd_goldLose.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "daa8c4cb-6b71-4ca2-86a9-4767d71c6af1",
             "Value": {
                 "id": "bfd1c9b8-5e91-4a51-9684-2601443f213f",
@@ -839,7 +871,8 @@
         "cc740065-70f8-44a2-a2c4-9e72d67d2923",
         "790c1c27-6f54-4096-96ef-f1d1e2e69061",
         "c43c31a0-4adf-411e-9c95-e55a29b92474",
-        "901bbbf5-dc21-4bf5-a16d-af0a8e35cfd4"
+        "901bbbf5-dc21-4bf5-a16d-af0a8e35cfd4",
+        "7412f913-e2cc-4985-9a54-7b1e5d6f61cb"
     ],
     "tutorial": ""
 }

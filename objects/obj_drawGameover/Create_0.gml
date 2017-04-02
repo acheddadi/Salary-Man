@@ -14,10 +14,10 @@ switch (irandom_range(0, 10))
 	text = "Whoopsies";
 	break;
 	case 2:
-	text = "M-m-monster kill!";
+	text = "M-m-monster kill !";
 	break;
 	case 3:
-	text = "Shamone girl!\nHe-he!";
+	text = "Shamone girl !\nHe-he !";
 	break;
 	case 4:
 	text = "That's gotta hurt";
@@ -32,12 +32,17 @@ switch (irandom_range(0, 10))
 	text = "???";
 	break;
 	case 8:
-	text = "I'm really feeling it!";
+	text = "I'm really feeling it !";
 	break;
 	case 9:
 	text = "Just beat it!";
 	break;
 	case 10:
-	text = "Killtacular!";
+	text = "Killtacular !";
+	break;
+	case 11:
+	text = "When life gives you lemons ...";
 	break;
 }
+
+obj_timeLine.deathCount++;

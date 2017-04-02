@@ -8,11 +8,14 @@ blockHeight = room_height / 12;
 gamespeed = 1;
 lastGamespeed = 1;
 
+MAX_DEATH = 10;
+
 timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
 timeSinceGameOver = 0;
 checkpoint = 0;
+deathCount = 0;
 
 // Timer
 instance_create_layer(0, 0, "Text", obj_drawTimer);
@@ -24,4 +27,5 @@ level = scr_level01;
 menu = scr_menu;
 
 // Audio
-audio_play_sound(snd_level01, 0, true);
+currentSong = snd_level01;
+audio_play_sound(currentSong, 0, true);
