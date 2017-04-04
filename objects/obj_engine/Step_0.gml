@@ -19,3 +19,6 @@ if (!instance_exists(obj_player)) gameover = true;
 
 // Speed Up event
 scr_speedUp();
+
+// Screen shake
+script_execute(shake);

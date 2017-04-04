@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1a8f4edc-29e9-440f-8fc4-70bec2844224",
+            "Value": {
+                "id": "9a4da4a0-63b9-4051-bc1a-9dd8e7a3ad78",
+                "resourcePath": "sounds\\snd_laser\\snd_laser.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "20acca82-d3be-4ce1-a5b2-b8771c12c92a",
             "Value": {
                 "id": "fb0441a6-b5f4-4c5c-b8fe-974174f778b4",
@@ -108,6 +116,14 @@
                 "id": "db0ed00a-e0f3-417d-a248-fdc389dd7efc",
                 "resourcePath": "sounds\\snd_speedUp\\snd_speedUp.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2782e1a3-fca9-400f-a823-866aa1e9d15a",
+            "Value": {
+                "id": "877f48b8-d452-4d3e-a959-529eba99c9b8",
+                "resourcePath": "views\\2782e1a3-fca9-400f-a823-866aa1e9d15a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -139,6 +155,22 @@
             "Value": {
                 "id": "06e859fd-03dc-490a-9808-0d0aadea53fa",
                 "resourcePath": "views\\3758625e-d44e-424f-a6b2-0b272babc8fc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "462262f6-1638-43ec-902a-1df128a1a468",
+            "Value": {
+                "id": "6716beb6-c257-4cb0-87a9-776e012a0531",
+                "resourcePath": "sounds\\snd_explosion\\snd_explosion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "48de1f0d-e45c-4cf7-8a1a-2bf39a0d1a95",
+            "Value": {
+                "id": "2665071b-e6e6-4f77-8a57-2d07c14f2b9c",
+                "resourcePath": "views\\48de1f0d-e45c-4cf7-8a1a-2bf39a0d1a95.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -708,6 +740,14 @@
                 "id": "6fd8f2a0-8bc9-4cf0-8955-45f00ea2e441",
                 "resourcePath": "sounds\\snd_goldLose\\snd_goldLose.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "cf332941-b93e-40a6-8c8e-f0903542d800",
+            "Value": {
+                "id": "287decc1-d404-4353-b9dd-72d9bffe9735",
+                "resourcePath": "views\\cf332941-b93e-40a6-8c8e-f0903542d800.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -5,10 +5,10 @@ if (explode)
 {
 	if (targetX < room_width)
 	{
-		if (timeElapsed > 5)
+		if (timeElapsed > 1)
 		{
 			instance_create_layer(targetX, targetY, "Enemies", obj_runningManExplosion);
-			targetX += 100;
+			targetX += 50;
 			timeElapsed = 0;
 		}
 	}

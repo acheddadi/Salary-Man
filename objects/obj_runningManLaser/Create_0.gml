@@ -41,3 +41,6 @@ for (var i = 0; i < 12; i++)
 
 leftEyeX = eyeCoordinates[index, 0] + callingX; rightEyeX = leftEyeX + (8 * obj_runningMan.size);
 leftEyeY = eyeCoordinates[index, 1] + callingY; rightEyeY = leftEyeY;
+
+audio_sound_pitch(snd_laser, 1.5);
+audio_play_sound(snd_laser, 1, false);

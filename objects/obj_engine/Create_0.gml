@@ -9,6 +9,7 @@ gamespeed = 1;
 lastGamespeed = 1;
 
 MAX_DEATH = 10;
+SHAKE = 0;
 
 timeElapsed = 3540;
 timeSeconds = 0;
@@ -29,3 +30,6 @@ menu = scr_menu;
 // Audio
 currentSong = snd_level01;
 audio_play_sound(currentSong, 0, true);
+
+// Screen shake
+shake = scr_shake;
