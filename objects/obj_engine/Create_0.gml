@@ -10,7 +10,7 @@ lastGamespeed = 1;
 
 MAX_DEATH = 10;
 
-timeElapsed = 0;
+timeElapsed = 3540;
 timeSeconds = 0;
 timeMinutes = 0;
 timeSinceGameOver = 0;

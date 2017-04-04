@@ -9,4 +9,4 @@ hspd = distanceToTravel / durationOfTravel;
 x += hspd;
 
 if (x >= (room_width + (sprite_width / 2))) instance_destroy();
-if (obj_timeLine.gameover) instance_destroy();
+if (obj_engine.gameover) instance_destroy();

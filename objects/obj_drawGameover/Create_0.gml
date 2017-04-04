@@ -5,7 +5,7 @@ destroy = false;
 size = 0;
 timeElapsed = 0;
 
-switch (irandom_range(0, 10))
+switch (irandom_range(0, 13))
 {
 	case 0:
 	text = "Life is difficult";
@@ -43,6 +43,12 @@ switch (irandom_range(0, 10))
 	case 11:
 	text = "When life gives you lemons ...";
 	break;
+	case 12:
+	text = "Pemit denied"
+	break;
+	case 13:
+	text = "I am the one who knocks"
+	break;
 }
 
-obj_timeLine.deathCount++;
+obj_engine.deathCount++;

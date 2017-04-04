@@ -4,7 +4,7 @@
 if (!instance_exists(obj_player)) instance_destroy();
 
 // Move speed
-currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
+currentSpeed = MOVE_SPD * obj_engine.gamespeed;
 
 if (hspd > (-currentSpeed)) hspd -= 0.1;
 x+= hspd;

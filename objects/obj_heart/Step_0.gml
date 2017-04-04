@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Move speed
-currentSpeed = MOVE_SPD * obj_timeLine.gamespeed;
+currentSpeed = MOVE_SPD * obj_engine.gamespeed;
 
 if (hspd > (-currentSpeed)) hspd -= 0.1;
 x+= hspd;

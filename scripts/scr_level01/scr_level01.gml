@@ -331,5 +331,8 @@ switch (timeSeconds)
 	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 80;
 	break;
 //===============================================================
+	case 73:
+	instance_create_layer(0,0, "Enemies", obj_runningManLaser);
+	break;
 	
 }

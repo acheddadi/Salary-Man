@@ -12,5 +12,5 @@ else
 	else instance_destroy();
 }
 
-if (obj_timeLine.gameover) destroy = true;
+if (obj_engine.gameover) destroy = true;
 timeElapsed++;
