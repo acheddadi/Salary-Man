@@ -11,10 +11,11 @@ destroy = false;
 firing = false;
 explode = false;
 
+target = 0;
 timeElapsed = 0;
 firespd = 0;
 
-targetX = 0; targetY = room_height - 128;
+targetX = 0; targetY = 0;
 lastX = 0;
 lenTraveled = 0;
 
