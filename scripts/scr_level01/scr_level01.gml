@@ -331,52 +331,38 @@ switch (timeSeconds)
 	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 40;
 	break;
 //===============================================================
-	case 65:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
-	break;
-	
-	case 66:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
-	break;
-	
-	case 67:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
-	break;
-	
 	case 68:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "down";
 	break;
 	
 	case 69:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "up";
 	break;
 	
+	
 	case 70:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "down";
 	break;
 	
 	case 71:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "up";
 	break;
 	
 	case 72:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "down";
 	break;
 	
 	case 73:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "up";
 	break;
 	
 	case 74:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "down";
 	break;
 	
 	case 75:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "down";
+	with (instance_create_layer(0, 0, "Enemies", obj_runningManLaser)) target = "up";
 	break;
-	
-	case 76:
-	with (instance_create_layer(0,0, "Enemies", obj_runningManLaser)) target = "up";
-	break;
+
 	
 }
