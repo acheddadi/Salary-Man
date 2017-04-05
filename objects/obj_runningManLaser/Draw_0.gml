@@ -27,7 +27,7 @@ if (create)
 
 	var tX = leftEyeX, tY = leftEyeY;
 	tX += nVecX * lenTraveled; tY += nVecY * lenTraveled;
-	lenTraveled += 25;
+	lenTraveled += 50;
 	
 	draw_line_width_color(leftEyeX, leftEyeY, tX, tY, (3 * obj_runningMan.size), c_red, c_red);
 	draw_line_width_color(rightEyeX, rightEyeY, tX + (8 * obj_runningMan.size), tY, (3 * obj_runningMan.size), c_red, c_red);
@@ -59,7 +59,7 @@ else if (firing)
 		draw_line_width_color(leftEyeX, leftEyeY, targetX, targetY, (3 * obj_runningMan.size), c_red, c_red);
 		draw_line_width_color(rightEyeX, rightEyeY, targetX + (8 * obj_runningMan.size), targetY, (3 * obj_runningMan.size), c_red, c_red);
 		targetX += firespd;
-		firespd += 2;
+		firespd += 10;
 		effect_create_below(ef_smoke, targetX, targetY, 1, c_gray);
 	}
 	else
@@ -85,7 +85,7 @@ else
 
 	var tX = leftEyeX, tY = leftEyeY;
 	tX += nVecX * lenTraveled; tY += nVecY * lenTraveled;
-	lenTraveled += 50;
+	lenTraveled += 75;
 	
 	draw_line_width_color(lastX, targetY, tX, tY, (3 * obj_runningMan.size), c_red, c_red);
 	draw_line_width_color(lastX + (8 * obj_runningMan.size), targetY, tX + (8 * obj_runningMan.size), tY, (3 * obj_runningMan.size), c_red, c_red);
