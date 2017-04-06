@@ -44,7 +44,7 @@ switch (irandom_range(0, 13))
 	text = "When life gives you lemons ...";
 	break;
 	case 12:
-	text = "Pemit denied"
+	text = "Permit denied"
 	break;
 	case 13:
 	text = "I am the one who knocks"
