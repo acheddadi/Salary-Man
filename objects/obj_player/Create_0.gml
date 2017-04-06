@@ -11,6 +11,7 @@ HALF_HEIGHT = room_height / 2;
 flip = false;
 
 // Collision
+ghp = 0;
 gold = false;
 invincibility = false;
 heart = false;

@@ -33,5 +33,8 @@ if (gold && !invincibility)
 		audio_sound_pitch(snd_damage, random_range(0.8, 1.2));
 		audio_play_sound(snd_damage, 1, false);
 	}
+	invincibility = true;
+	alarm[0] = INV_DELAY;
 	obj_engine.SHAKE = 15;
+	ghp--;
 }

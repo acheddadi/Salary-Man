@@ -11,7 +11,7 @@ lastGamespeed = 1;
 MAX_DEATH = 10;
 SHAKE = 0;
 
-timeElapsed = 3540;
+timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
 timeSinceGameOver = 0;
