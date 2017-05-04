@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Pan camera
 if (goToX > x)
 {
 	if ((x + transitionSpeed) < goToX) x += transitionSpeed;

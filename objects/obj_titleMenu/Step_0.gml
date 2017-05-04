@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Fade in text
 if (size < 1) size += 0.05;
 
+// Manage inputs depending on current screen
 switch (currentScreen)
 {
+	// Title screen
 	case 0:
 	if (keyboard_check_pressed(vk_up)) menuChoice--;
 	if (keyboard_check_pressed(vk_down)) menuChoice++;
@@ -12,6 +15,7 @@ switch (currentScreen)
 	{
 		switch (menuChoice)
 		{
+			// Start button
 			case 0:
 			if (instance_exists(obj_currentScreen))
 			{
@@ -25,14 +29,20 @@ switch (currentScreen)
 				}
 			}
 			break;
+			
+			// Options button
 			case 1:
 			break;
+			
+			// Quit button
 			case 2:
 			game_end();
 			break;
 		}
 	}
 	break;
+	
+	// Stage select screen
 	case 1:
 	if (keyboard_check_pressed(vk_left)) menuChoice--;
 	if (keyboard_check_pressed(vk_right)) menuChoice++;
@@ -40,6 +50,7 @@ switch (currentScreen)
 	if (keyboard_check_pressed(vk_up)) menuRow--;
 	if(keyboard_check_pressed(vk_enter))
 	{
+		// Back button
 		if (menuRow == 1)
 		{
 			if (instance_exists(obj_currentScreen))
@@ -54,6 +65,8 @@ switch (currentScreen)
 					}
 				}
 		}
+		
+		// Stage thumbnails
 		else switch (menuChoice)
 		{
 			case 0:
@@ -66,8 +79,8 @@ switch (currentScreen)
 		}
 	}
 	break;
+	
+	// Options screen
 	case 2:
 	break;
 }
-
-
