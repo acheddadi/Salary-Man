@@ -4,7 +4,9 @@
 menuX = room_width * 63/128;
 menuY = room_height * 2/3;
 
+currentScreen = 0;
 menuChoice = 0;
+menuRow = 0;
 
 creditsX = room_width / 2;
 creditsY = room_height * 11/12;

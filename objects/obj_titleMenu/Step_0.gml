@@ -3,35 +3,71 @@
 
 if (size < 1) size += 0.05;
 
-if (keyboard_check_pressed(vk_up)) menuChoice--;
-if (keyboard_check_pressed(vk_down)) menuChoice++;
-
-if(keyboard_check_pressed(vk_enter))
+switch (currentScreen)
 {
-	switch (menuChoice)
+	case 0:
+	if (keyboard_check_pressed(vk_up)) menuChoice--;
+	if (keyboard_check_pressed(vk_down)) menuChoice++;
+	if(keyboard_check_pressed(vk_enter))
 	{
-		case 0:
-		if (instance_exists(obj_currentScreen))
+		switch (menuChoice)
 		{
-			with (obj_currentScreen)
+			case 0:
+			if (instance_exists(obj_currentScreen))
 			{
-				goToX = PositionX[1];
-				goToY = PositionY[1];
+				currentScreen = 1;
+				menuChoice = 0;
+				menuRow = 0;
+				with (obj_currentScreen)
+				{
+					goToX = PositionX[1];
+					goToY = PositionY[1];
+				}
 			}
+			break;
+			case 1:
+			break;
+			case 2:
+			game_end();
+			break;
 		}
-		break;
-		case 1:
-				if (instance_exists(obj_currentScreen))
-		{
-			with (obj_currentScreen)
-			{
-				goToX = PositionX[2];
-				goToY = PositionY[2];
-			}
-		}
-		break;
-		case 2:
-		game_end();
-		break;
 	}
+	break;
+	case 1:
+	if (keyboard_check_pressed(vk_left)) menuChoice--;
+	if (keyboard_check_pressed(vk_right)) menuChoice++;
+	if (keyboard_check_pressed(vk_down)) menuRow++;
+	if (keyboard_check_pressed(vk_up)) menuRow--;
+	if(keyboard_check_pressed(vk_enter))
+	{
+		if (menuRow == 1)
+		{
+			if (instance_exists(obj_currentScreen))
+				{
+					currentScreen = 0;
+					menuChoice = 0;
+					menuRow = 0;
+					with (obj_currentScreen)
+					{
+						goToX = PositionX[0];
+						goToY = PositionY[0];
+					}
+				}
+		}
+		else switch (menuChoice)
+		{
+			case 0:
+			room_goto(rm_test);
+			break;
+			case 1:
+			break;
+			case 2:
+			break;
+		}
+	}
+	break;
+	case 2:
+	break;
 }
+
+

@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "925a2888-4646-4f6f-aecd-b951f2f83960",
+            "Value": {
+                "id": "bbafc6e4-d54e-4e47-810d-eaac5886d8c4",
+                "resourcePath": "sprites\\spr_downArrow\\spr_downArrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93925e14-97fc-413e-b677-2b681b6f4fc6",
             "Value": {
                 "id": "81199358-7d0d-49d2-aaaa-2863013e6ac3",
