@@ -11,15 +11,15 @@ menuRow = 0;
 
 // Position of title screen menu
 menuX = room_width * 63/128;
-menuY = room_height * 2/3;
+menuY = room_height * 2/6;
 
 // Position of title screen credits
 creditsX = room_width / 2;
-creditsY = room_height * 11/12;
+creditsY = room_height * 11/24;
 
 // Position of stage back button
 stageBackX = room_width * 5/6;
-stageBackY = room_height * 10/12;
+stageBackY = room_height * 10/24;
 
 // Position of stage thumbnails
 var numOfStages = 3;
@@ -30,21 +30,25 @@ stage2X = stage1X + (2 * padding);
 stage3X = stage2X + (2 * padding);
 
 // Creatnig stage thumbnails
-with (instance_create_layer(stage1X, room_height / 2, "Images", obj_stages))
+with (instance_create_layer(stage1X, room_height / 4, "Images", obj_stages))
 {
 	sprite_index = spr_stage1;
 	image_xscale = 3;
 	image_yscale = image_xscale;
 }
-with (instance_create_layer(stage2X, room_height / 2, "Images", obj_stages))
+with (instance_create_layer(stage2X, room_height / 4, "Images", obj_stages))
 {
 	sprite_index = spr_unknown;
 	image_xscale = 3;
 	image_yscale = image_xscale;
 }
-with (instance_create_layer(stage3X, room_height / 2, "Images", obj_stages))
+with (instance_create_layer(stage3X, room_height / 4, "Images", obj_stages))
 {
 	sprite_index = spr_unknown;
 	image_xscale = 3;
 	image_yscale = image_xscale;
 }
+
+// Audio
+currentSong = snd_title;
+audio_play_sound(currentSong, 0, true);

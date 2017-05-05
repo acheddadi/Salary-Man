@@ -69,13 +69,13 @@ switch (currentScreen)
 	else switch (menuChoice)
 	{
 		case 0:
-		draw_sprite(spr_downArrow, 0, stage1X, (room_height / 2) - (obj_stages.sprite_height / 2) - 16);
+		draw_sprite(spr_downArrow, 0, stage1X, (room_height / 4) - (obj_stages.sprite_height / 2) - 16);
 		break;
 		case 1:
-		draw_sprite(spr_downArrow, 0, stage2X, (room_height / 2) - (obj_stages.sprite_height / 2) - 16);
+		draw_sprite(spr_downArrow, 0, stage2X, (room_height / 4) - (obj_stages.sprite_height / 2) - 16);
 		break;
 		case 2:
-		draw_sprite(spr_downArrow, 0, stage3X, (room_height / 2) - (obj_stages.sprite_height / 2) - 16);
+		draw_sprite(spr_downArrow, 0, stage3X, (room_height / 4) - (obj_stages.sprite_height / 2) - 16);
 		break;
 		
 		// Wrap around columns
@@ -88,5 +88,7 @@ switch (currentScreen)
 	
 	// Options screen
 	case 2:
+	break;
+	default:
 	break;
 }

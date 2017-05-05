@@ -956,7 +956,7 @@
         }
     ],
     "origin": 1,
-    "playbackSpeed": 21,
+    "playbackSpeed": 30,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,

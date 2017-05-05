@@ -1,5 +1,6 @@
 // Initializing variables
 vspd = 0;
+size = 0;
 
 // Initializing constants
 INV_DELAY = 90;

@@ -70,7 +70,18 @@ switch (currentScreen)
 		else switch (menuChoice)
 		{
 			case 0:
-			room_goto(rm_test);
+			if (instance_exists(obj_currentScreen))
+			{
+				currentScreen = -1;
+				menuChoice = 0;
+				menuRow = 0;
+				with (obj_currentScreen)
+				{
+					goToY *= 2;
+					nextStage = 1;
+				}
+				audio_sound_gain(snd_title, 0, 200);
+			}
 			break;
 			case 1:
 			break;

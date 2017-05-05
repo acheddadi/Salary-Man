@@ -9,9 +9,9 @@ PositionX[0] = room_width / 2;
 PositionX[1] = room_width * 5/6;
 PositionX[2] = room_width * 1/6;
 
-PositionY[0] = room_height / 2;
-PositionY[1] = room_height / 2;
-PositionY[2] = room_height / 2;
+PositionY[0] = room_height / 4;
+PositionY[1] = room_height / 4;
+PositionY[2] = room_height / 4;
 
 // Player choice
 goToX = PositionX[0];
@@ -23,3 +23,6 @@ y = PositionY[0];
 
 // Camera panning speed
 transitionSpeed = 32
+
+// Stage to transition to
+nextStage = 0;

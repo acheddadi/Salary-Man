@@ -23,3 +23,14 @@ else if (goToX < y)
 	if ((y + transitionSpeed) > goToY) y -= transitionSpeed;
 	else while (goToX < y) y--;
 }
+
+switch (nextStage)
+{
+	case 1:
+	if (y == goToY) room_goto(rm_testLoad);
+	break;
+	case 2:
+	break;
+	case 3:
+	break;
+}
