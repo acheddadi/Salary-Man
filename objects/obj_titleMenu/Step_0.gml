@@ -4,6 +4,10 @@
 // Fade in text
 if (size < 1) size += 0.05;
 
+// Menu movement sound
+if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down)) audio_play_sound(snd_move, 1, false);
+if ((keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)) && ((currentScreen == 1) && (menuRow == 0))) audio_play_sound(snd_move, 1, false);
+
 // Manage inputs depending on current screen
 switch (currentScreen)
 {
@@ -19,6 +23,7 @@ switch (currentScreen)
 			case 0:
 			if (instance_exists(obj_currentScreen))
 			{
+				audio_play_sound(snd_select, 1, false);
 				currentScreen = 1;
 				menuChoice = 0;
 				menuRow = 0;
@@ -55,6 +60,7 @@ switch (currentScreen)
 		{
 			if (instance_exists(obj_currentScreen))
 				{
+					audio_play_sound(snd_cancel, 1, false);
 					currentScreen = 0;
 					menuChoice = 0;
 					menuRow = 0;
@@ -72,6 +78,7 @@ switch (currentScreen)
 			case 0:
 			if (instance_exists(obj_currentScreen))
 			{
+				audio_play_sound(snd_select, 1, false);
 				currentScreen = -1;
 				menuChoice = 0;
 				menuRow = 0;

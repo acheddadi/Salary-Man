@@ -38,4 +38,3 @@ else sprite_index = spr_player;
 
 // Scale up spawning
 if (size < 1) size += 0.1;
-image_yscale = size;

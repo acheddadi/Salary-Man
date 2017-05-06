@@ -23,5 +23,5 @@ if (place_meeting(x, y + vspd, obj_collision))
 y += vspd;
 
 // Image flip
-if (y < HALF_HEIGHT) image_yscale = -1;
-else image_yscale = 1;
+if (y < HALF_HEIGHT) image_yscale = -(size);
+else image_yscale = size;

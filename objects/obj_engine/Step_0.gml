@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Smooth spawn
+if (gamespeed < 1) gamespeed += 0.1;
+
 // Tick, tock
 timeElapsed++;
 timeSeconds = timeElapsed / 60;

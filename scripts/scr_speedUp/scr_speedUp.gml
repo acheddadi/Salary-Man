@@ -1,6 +1,6 @@
 // speedUp script
 
-layer_hspeed("Floor", gamespeed * -10);
+layer_hspeed("Floor", gamespeed * -12);
 layer_hspeed("Foreground", gamespeed * -0.5);
 layer_hspeed("Background", gamespeed * -0.25);
 

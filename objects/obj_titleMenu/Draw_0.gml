@@ -14,7 +14,6 @@ draw_text_transformed(menuX, menuY + 48, "Quit", 1, size, 0);
 // Stage select menu
 draw_text_transformed(stageBackX, stageBackY, "Back", 1, size, 0);
 
-
 // Centered text
 draw_set_halign(true);
 draw_set_valign(true);
