@@ -1,3 +1,7 @@
+// Scale up spawning
+if (size < 1) size += 0.1;
+image_xscale = size;
+
 // Defaults
 image_blend = c_white;
 
@@ -35,6 +39,3 @@ else if (invincibility) sprite_index = spr_playerInvincible;
 else if (heart) sprite_index = spr_playerHeart;
 
 else sprite_index = spr_player;
-
-// Scale up spawning
-if (size < 1) size += 0.1;
