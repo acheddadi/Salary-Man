@@ -5,7 +5,7 @@
 if (gamespeed < 1) gamespeed += 0.1;
 
 // Tick, tock
-timeElapsed++;
+//timeElapsed++;
 timeSeconds = timeElapsed / 60;
 timeMinutes = timeSeconds / 60;
 
