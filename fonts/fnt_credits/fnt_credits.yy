@@ -1471,5 +1471,5 @@
     "sampleText": "© 2O17 Pyjama Games\\nAll rights reserved",
     "size": 9,
     "styleName": "Nominal",
-    "textureGroup": 0
+    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f"
 }

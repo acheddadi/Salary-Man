@@ -1468,8 +1468,8 @@
             "y": 169
         }
     ],
-    "sampleText": "Start\\u000d\\u000aOptions",
+    "sampleText": "Start\\u000aOptions",
     "size": 12,
     "styleName": "Nominal",
-    "textureGroup": 0
+    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f"
 }
