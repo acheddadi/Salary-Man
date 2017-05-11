@@ -1,19 +1,28 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-if (timeElapsed == 4)
+// Start wipe
+if (!settle)
 {
-	if (index < image_number) index++;
-	else index = 0;
-	timeElapsed = 0;
+	if (opacity < 1) opacity += 0.01;
+	if (positionY > wipePositionY) positionY -= positionRate;
+	if (amount < wipeAmount) amount += amountRate;
+	else settle = true;
 }
 
-if (currentX < -room_width) currentX = 0;
+// Settle wipe
+else
+{
+	if (timeElapsed > 120)
+	{
+		if (opacity > 0) opacity -= 0.01;
+		if (positionY < initialPositionY) positionY += positionRate;
+		if (amount > initialAmount) amount -= amountRate;	
+	}
+	timeElapsed++;
+}
 
-timeElapsed++;
+// Update particle
+part_emitter_region(global.partsys_fire, my_emitter, -50, room_width + 50, positionY, room_height + 50, ps_shape_rectangle, ps_distr_linear);
 
-hspd = -MOV_SPEED * obj_engine.gamespeed;
-vspd = 0;
+//start the particle streams
+part_emitter_burst(global.partsys_fire,my_emitter,global.part_fire,amount);
+part_emitter_burst(global.partsys_fire,my_emitter,global.part_cinder,-5);
 
-currentX += hspd;
-currentY += vspd;
