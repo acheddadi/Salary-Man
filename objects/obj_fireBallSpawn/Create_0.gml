@@ -6,6 +6,9 @@ density = 17;
 sine = 0;
 cosine = (density - 1);
 
+sineSpd = 0;
+cosineSpd = 0;
+
 var unit = room_height / 12;
 var remainder = room_height - (4 * unit);
 var spacing = remainder / density;

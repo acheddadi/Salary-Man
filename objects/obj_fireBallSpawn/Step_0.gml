@@ -21,10 +21,16 @@ if (timeElapsed > frequency)
 		cosine++;
 	}
 	
-	instance_create_layer(room_width + sprite_width, position[sine], "Enemies", obj_fire);
+	with(instance_create_layer(room_width + sprite_width, position[sine], "Enemies", obj_fire))
+	{
+		MOVE_SPD = 6;
+	}
 	if (sine != cosine)
 	{
-		instance_create_layer(room_width + sprite_width, position[cosine], "Enemies", obj_fire);
+		with(instance_create_layer(room_width + sprite_width, position[cosine], "Enemies", obj_fire))
+		{
+			MOVE_SPD = 6;
+		}
 	}
 	timeElapsed = 0;
 	counter++;

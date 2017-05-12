@@ -9,3 +9,9 @@ image_xscale *= 3/2;
 image_yscale = image_xscale;
 
 image_index = irandom(image_number - 1);
+
+//call the particle creation script
+scr_fire();
+
+//set up the particle emitter
+my_emitter = part_emitter_create(global.partsys_fire);

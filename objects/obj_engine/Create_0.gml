@@ -5,7 +5,7 @@
 speedUp = false;
 gameover = false;
 blockHeight = room_height / 12;
-gamespeed = 2;
+gamespeed = 3;
 lastGamespeed = 1;
 
 MAX_DEATH = 10;
