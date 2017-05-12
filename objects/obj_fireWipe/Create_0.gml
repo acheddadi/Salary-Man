@@ -2,14 +2,15 @@
 initialPositionY = room_height + 100;
 initialAmount = 10;
 
-positionY = initialPositionY
+positionX = 0;
+positionY = room_height - 100;
 amount = initialAmount
 
 wipePositionY = -100;
 wipeAmount = 125;
 
-positionRate = positionY / 100;
-amountRate = wipeAmount / 100;
+positionRate = positionY / 125;
+amountRate = wipeAmount / 125;
 
 settle = false;
 opacity = 0;
