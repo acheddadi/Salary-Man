@@ -8,14 +8,13 @@ if (explode)
 		if (timeElapsed > 20)
 		{
 			instance_create_layer(explodeX, targetY, "Enemies", obj_runningManExplosion);
-			explodeX += (room_width / 10);
+			explodeX += (room_width / 9);
 			timeElapsed = 0;
 		}
 	}
 	else
 	{
 		explode = false;
-		instance_destroy();
 	}
 }
 

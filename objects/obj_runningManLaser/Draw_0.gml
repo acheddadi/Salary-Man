@@ -81,5 +81,5 @@ else
 	draw_line_width_color(lastX, targetY, tX, tY, (3 * obj_runningMan.size), c_red, c_red);
 	draw_line_width_color(lastX + (8 * obj_runningMan.size), targetY, tX + (8 * obj_runningMan.size), tY, (3 * obj_runningMan.size), c_red, c_red);
 	
-	if (tY >= targetY) destroy = false;
+	if (tY >= targetY) instance_destroy();
 }

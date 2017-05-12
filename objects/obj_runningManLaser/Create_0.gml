@@ -15,7 +15,7 @@ explode = false;
 timeElapsed = 0;
 firespd = 0;
 
-circleSize = 100;
+circleSize = 80;
 explodeX = 0;
 targetX = 0; targetY = room_height - 128;
 lastX = 0;
