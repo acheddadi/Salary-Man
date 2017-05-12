@@ -1,5 +1,9 @@
 // Horizontal wipe
-if (positionX < room_width) positionX += (room_width / 125);
+if (positionX < room_width)
+{
+	positionX += firespd;
+	firespd += 0.1;
+}
 else
 {
 	// Start wipe
@@ -10,6 +14,7 @@ else
 		if (amount < wipeAmount) amount += amountRate;
 		else
 		{
+			audio_play_sound(obj_engine.currentSong, 0, true);
 			settle = true;
 			
 			var sky_id = layer_get_id("Sky");

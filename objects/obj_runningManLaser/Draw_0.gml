@@ -5,19 +5,22 @@ index = obj_runningMan.image_index;
 callingX = obj_runningMan.x;
 callingY = obj_runningMan.y;
 
-switch (target)
+if (charging)
 {
-	case "up":
-	targetY = 128;
-	break;
+	if (circleSize > 0)
+	{
+		draw_circle_color(leftEyeX, leftEyeY, circleSize, 0, c_red, true);
+		draw_circle_color(rightEyeX, rightEyeY, circleSize, 0, c_red, true);
+		circleSize--;
+	}
 	
-	case "down":
-	targetY = room_height - 128;
-	break;
-	
-	default:
-	instance_destroy();
-	break;
+	else
+	{
+		audio_sound_pitch(snd_laser, 1.5);
+		audio_play_sound(snd_laser, 1, false);
+		charging = false;
+		create = true;
+	}
 }
 
 if (create)
@@ -32,25 +35,14 @@ if (create)
 	draw_line_width_color(leftEyeX, leftEyeY, tX, tY, (3 * obj_runningMan.size), c_red, c_red);
 	draw_line_width_color(rightEyeX, rightEyeY, tX + (8 * obj_runningMan.size), tY, (3 * obj_runningMan.size), c_red, c_red);
 	
-	if (target == "down")
+	if (tY >= targetY)
 	{
-		if (tY >= targetY)
-		{
-			firing = true;
-			create = false;
-			lenTraveled = 0;
-		}
+		instance_create_layer(0, 0, "Text", obj_fireWipe);
+		explode = true;
+		firing = true;
+		create = false;
+		lenTraveled = 0;
 	}
-	if (target == "up")
-	{
-		if (tY <= targetY)
-		{
-			firing = true;
-			create = false;
-			lenTraveled = 0;
-		}
-	}
-
 }
 else if (firing)
 {
@@ -59,14 +51,13 @@ else if (firing)
 		draw_line_width_color(leftEyeX, leftEyeY, targetX, targetY, (3 * obj_runningMan.size), c_red, c_red);
 		draw_line_width_color(rightEyeX, rightEyeY, targetX + (8 * obj_runningMan.size), targetY, (3 * obj_runningMan.size), c_red, c_red);
 		targetX += firespd;
-		firespd += 10;
-		effect_create_below(ef_smoke, targetX, targetY, 1, c_gray);
+		firespd += 0.1;
+		//effect_create_below(ef_smoke, targetX, targetY, 1, c_orange);
 	}
 	else
 	{
 		firing = false;
 		destroy = true;
-		explode = true;
 		lastX = targetX;
 		targetX = 0;
 	}
@@ -90,12 +81,5 @@ else
 	draw_line_width_color(lastX, targetY, tX, tY, (3 * obj_runningMan.size), c_red, c_red);
 	draw_line_width_color(lastX + (8 * obj_runningMan.size), targetY, tX + (8 * obj_runningMan.size), tY, (3 * obj_runningMan.size), c_red, c_red);
 	
-	if (target == "down")
-	{
-		if (tY >= targetY) destroy = false;
-	}
-	if (target == "up")
-	{
-		if (tY <= targetY) destroy = false;
-	}
+	if (tY >= targetY) destroy = false;
 }

@@ -6,16 +6,18 @@ index = obj_runningMan.image_index;
 callingX = obj_runningMan.x;
 callingY = obj_runningMan.y;
 
-create = true;
+charging = true;
+create = false;
 destroy = false;
 firing = false;
 explode = false;
 
-target = 0;
 timeElapsed = 0;
 firespd = 0;
 
-targetX = 0; targetY = 0;
+circleSize = 100;
+explodeX = 0;
+targetX = 0; targetY = room_height - 128;
 lastX = 0;
 lenTraveled = 0;
 
@@ -43,5 +45,5 @@ for (var i = 0; i < 12; i++)
 leftEyeX = eyeCoordinates[index, 0] + callingX; rightEyeX = leftEyeX + (8 * obj_runningMan.size);
 leftEyeY = eyeCoordinates[index, 1] + callingY; rightEyeY = leftEyeY;
 
-audio_sound_pitch(snd_laser, 1.5);
-audio_play_sound(snd_laser, 1, false);
+audio_sound_pitch(snd_charging, 1.5);
+audio_play_sound(snd_charging, 1, false);

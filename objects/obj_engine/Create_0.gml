@@ -5,13 +5,13 @@
 speedUp = false;
 gameover = false;
 blockHeight = room_height / 12;
-gamespeed = 3;
+gamespeed = 2;
 lastGamespeed = 1;
 
 MAX_DEATH = 10;
 SHAKE = 0;
 
-timeElapsed = 0;
+timeElapsed = 3535;
 timeSeconds = 0;
 timeMinutes = 0;
 timeSinceGameOver = 0;

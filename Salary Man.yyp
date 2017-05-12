@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "9a2054f6-1d78-4f20-a0b6-0c6597143759",
+            "Value": {
+                "id": "6cfeaa41-566f-4a6a-8d55-9e3391a1ed75",
+                "resourcePath": "sounds\\snd_boss01\\snd_boss01.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9a598370-27ae-4655-bb2a-87a8bce52366",
             "Value": {
                 "id": "a66b9295-edae-40bb-9232-ccc00868d177",
@@ -1108,6 +1116,14 @@
                 "id": "6bfed13e-f099-4d42-9a57-7b62eb8223a3",
                 "resourcePath": "fonts\\fnt_credits\\fnt_credits.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "da4b69ff-d0c4-433b-af47-8f8ac1423066",
+            "Value": {
+                "id": "0c9e8de4-5dc9-4f35-aa9e-7db23a9b9b90",
+                "resourcePath": "sounds\\snd_charging\\snd_charging.yy",
+                "resourceType": "GMSound"
             }
         },
         {
