@@ -48,9 +48,9 @@ else
 }
 
 // Update particle
-part_emitter_region(global.partsys_fire, my_emitter, -50, positionX + 50, positionY, room_height + 50, ps_shape_rectangle, ps_distr_linear);
+part_emitter_region(partsys_fire, my_emitter, -50, positionX + 50, positionY, room_height + 50, ps_shape_rectangle, ps_distr_linear);
 
 //start the particle streams
-part_emitter_burst(global.partsys_fire,my_emitter,global.part_fire,amount);
-part_emitter_burst(global.partsys_fire,my_emitter,global.part_cinder,-5);
+part_emitter_burst(partsys_fire,my_emitter,part_fire,amount);
+part_emitter_burst(partsys_fire,my_emitter,part_cinder,-5);
 

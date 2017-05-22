@@ -1,5 +1,5 @@
 // Initialize variables
-initialPositionY = room_height + 100;
+initialPositionY = room_height + 300;
 initialAmount = 10;
 
 positionX = 50;
@@ -21,7 +21,7 @@ timeElapsed = 0;
 scr_fireWipe();
 
 //set up the particle emitter
-my_emitter = part_emitter_create(global.partsys_fire);
+my_emitter = part_emitter_create(partsys_fire);
 
 // Song switch
 audio_sound_gain(obj_engine.currentSong, 0, 3000);

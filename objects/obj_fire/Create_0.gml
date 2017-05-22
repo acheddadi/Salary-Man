@@ -14,4 +14,4 @@ image_index = irandom(image_number - 1);
 scr_fire();
 
 //set up the particle emitter
-my_emitter = part_emitter_create(global.partsys_fire);
+my_emitter = part_emitter_create(partsys_fire);
