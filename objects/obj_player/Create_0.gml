@@ -4,7 +4,7 @@ size = 0;
 
 // Initializing constants
 INV_DELAY = 90;
-TERM_VEL = 10;
+TERM_VEL = 12;
 GRAV = 4;
 HALF_HEIGHT = room_height / 2;
 

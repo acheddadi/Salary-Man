@@ -314,24 +314,38 @@ switch (timeSeconds)
 	case 58.5:
 	instance_create_layer(0, 0, "Enemies", obj_kickSpawn);
 	break;
-	
+//===============================================================
+// Phase 3
+//===============================================================
 	case 59:
+	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 20;
+	break;
+	
+	case 62:
+	instance_create_layer(0, 0, "Enemies", obj_runningManLaser);
+	break;	
+	
+	case 67.5:
+	if (instance_exists(obj_runningMan)) instance_destroy(obj_runningMan);
 	scr_checkpoint();
 	break;
 //================================================================
 // Heart spawn
-	case 60.5:
+	case 71:
 	scr_heartSpawn();
 	break;
-//===============================================================
-// Phase 3
-//===============================================================
-	case 60:
+//================================================================
+// Speed up
+	case 71.5:
 	speedUp = true;
-	with (instance_create_layer(0, 0, "BossFloor", obj_runningMan)) stopTime = 20;
 	break;
-//===============================================================
-	case 63:
-	instance_create_layer(0, 0, "Enemies", obj_runningManLaser);
-	break;	
+	
+	case 73:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 15 * 60;
+	break;
+
+	case 88:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 15 * 60;
+	break;
+	
 }

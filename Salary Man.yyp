@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "f8abbf43-b4ba-43e9-b7ac-cf4962319806",
+            "Value": {
+                "id": "335c3f24-0244-4bec-859a-32d666703a28",
+                "resourcePath": "sounds\\snd_footstep\\snd_footstep.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fc36d2e6-a66f-48e1-8fb2-1acfd1d5637a",
             "Value": {
                 "id": "66d99c13-bf00-4f14-b996-7c073b27a186",
