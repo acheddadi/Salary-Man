@@ -14,6 +14,8 @@ if (timeElapsed > frequency)
 		}
 	}
 	timeElapsed = 0;
+	audio_sound_pitch(snd_fire, random_range(0.8, 1.2));
+	audio_play_sound(snd_fire, 1, false);
 }
 
 timeElapsed++;

@@ -341,11 +341,11 @@ switch (timeSeconds)
 	break;
 	
 	case 73:
-	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 15 * 60;
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 20 * 60;
 	break;
 
-	case 88:
-	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 15 * 60;
+	case 93:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 20 * 60;
 	break;
 	
 }

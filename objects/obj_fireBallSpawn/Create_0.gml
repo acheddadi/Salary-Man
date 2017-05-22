@@ -16,8 +16,8 @@ for (var i = 0; i < density; i++)
 	position[i] = (5/2 * unit) + (spacing * i);
 }
 
-spdSin = 1.5;
-spdCos = 1.5;
+spdSin = 1;
+spdCos = 1;
 frequencySin = spdSin * FREQUENCY;
 frequencyCos = spdCos * FREQUENCY;
 flipSin = false;

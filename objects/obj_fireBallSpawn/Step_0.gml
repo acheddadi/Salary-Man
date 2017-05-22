@@ -12,7 +12,7 @@ if (timeElapsedSin > frequencySin)
 		if (flipSin)
 		{
 			flipSin = false;
-			spdSin = random_range(1, 1.5);
+			spdSin = random_range(0.8, 1.6);
 		}
 		else flipSin = true;
 	}
@@ -20,6 +20,8 @@ if (timeElapsedSin > frequencySin)
 	if (!flipSin) sine++;
 	else sine--;
 	
+	audio_sound_pitch(snd_fire, random_range(0.8, 1.2));
+	audio_play_sound(snd_fire, 1, false);
 	with(instance_create_layer(room_width + sprite_width, position[sine], "Enemies", obj_fire))
 	{
 		MOVE_SPD = 7 * other.spdSin;
@@ -37,7 +39,7 @@ if (timeElapsedCos > frequencyCos)
 		if (flipCos)
 		{
 			flipCos = false;
-			spdCos = random_range(1, 1.5);
+			spdCos = random_range(0.8, 1.2);
 		}
 		else flipCos = true;
 	}
@@ -47,6 +49,8 @@ if (timeElapsedCos > frequencyCos)
 	
 	if (sine != cosine)
 	{
+		audio_sound_pitch(snd_fire, random_range(0.8, 1.2));
+		audio_play_sound(snd_fire, 1, false);
 		with(instance_create_layer(room_width + sprite_width, position[cosine], "Enemies", obj_fire))
 		{
 			MOVE_SPD = 7 * other.spdCos;
