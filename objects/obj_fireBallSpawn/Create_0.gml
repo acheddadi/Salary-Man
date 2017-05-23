@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-FREQUENCY = 25;
+frequency = 25;
 density = 5;
 sine = 0;
 cosine = (density - 1);
@@ -18,8 +18,8 @@ for (var i = 0; i < density; i++)
 
 spdSin = 1;
 spdCos = 1;
-frequencySin = spdSin * FREQUENCY;
-frequencyCos = spdCos * FREQUENCY;
+frequencySin = spdSin * frequency;
+frequencyCos = spdCos * frequency;
 flipSin = false;
 flipCos = false;
 counterSin = 0;

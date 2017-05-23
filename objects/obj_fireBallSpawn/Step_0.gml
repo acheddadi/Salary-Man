@@ -3,8 +3,8 @@
 
 spd = MOVE_SPD * obj_engine.gamespeed;
 
-frequencySin = FREQUENCY / spdSin;
-frequencyCos = FREQUENCY / spdCos;
+frequencySin = frequency / spdSin;
+frequencyCos = frequency / spdCos;
 
 if (timeElapsedSin > frequencySin)
 {

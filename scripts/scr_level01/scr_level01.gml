@@ -352,22 +352,42 @@ switch (timeSeconds)
 	break;
 	
 	case 103:
-	scr_checkpoint();
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn))
+	{
+		alarm[0] = 10 * 60;
+		frequency = 60;
+	}
 	break;
 	
 	case 103.5:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn))
+	{
+		alarm[0] = 9.5 * 60;
+		frequency = 60;
+	}
+	break;
+	
+	case 113:
+	scr_checkpoint();
+	break;
+	
+	case 113.5:
 	scr_heartSpawn();
 	break;
 	
-	case 104:
+	case 114:
 	speedUp = true;
 	break;
 	
-	case 105.5:
-	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 5 * 60;
+	case 116:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn))
+	{
+		alarm[0] = 5 * 60;
+		frequency = 30;
+	}
 	break;
 
-	case 110.5:
+	case 121:
 	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn))
 	{
 		alarm[0] = 5 * 60;
