@@ -7,13 +7,13 @@ sine = 0;
 cosine = (density - 1);
 
 var unit = room_height / 12;
-var remainder = room_height - (4 * unit);
+var remainder = room_height - (2 * unit);
 var spacing = remainder / density;
 
 
 for (var i = 0; i < density; i++)
 {
-	position[i] = (5/2 * unit) + (spacing * i);
+	position[i] = (2 * unit) + (spacing * i);
 }
 
 spdSin = 1;
@@ -26,3 +26,6 @@ counterSin = 0;
 counterCos = 0;
 timeElapsedSin = 0;
 timeElapsedCos = 0;
+
+MOVE_SPD = 7/3;
+spd = 0;

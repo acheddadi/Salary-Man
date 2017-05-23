@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+spd = MOVE_SPD * obj_engine.gamespeed;
+
 if (timeElapsed > frequency)
 {
 	var gapSeed = irandom(density - gapSize - 1);
@@ -10,7 +12,7 @@ if (timeElapsed > frequency)
 		if (i == gapSeed) i += gapSize;
 		with(instance_create_layer(room_width + sprite_width, position[i], "Enemies", obj_fire))
 		{
-			MOVE_SPD = 7;
+			MOVE_SPD = other.spd;
 		}
 	}
 	timeElapsed = 0;

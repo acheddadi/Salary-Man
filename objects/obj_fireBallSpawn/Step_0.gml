@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+spd = MOVE_SPD * obj_engine.gamespeed;
+
 frequencySin = FREQUENCY / spdSin;
 frequencyCos = FREQUENCY / spdCos;
 
@@ -24,7 +26,7 @@ if (timeElapsedSin > frequencySin)
 	audio_play_sound(snd_fire, 1, false);
 	with(instance_create_layer(room_width + sprite_width, position[sine], "Enemies", obj_fire))
 	{
-		MOVE_SPD = 7 * other.spdSin;
+		MOVE_SPD = other.spd * other.spdSin;
 	}
 	timeElapsedSin = 0;
 	counterSin++;

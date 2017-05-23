@@ -327,7 +327,6 @@ switch (timeSeconds)
 	
 	case 67.5:
 	if (instance_exists(obj_runningMan)) instance_destroy(obj_runningMan);
-	scr_checkpoint();
 	break;
 	
 	case 70.5:
@@ -345,23 +344,36 @@ switch (timeSeconds)
 	break;
 	
 	case 73:
-	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 20 * 60;
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 15 * 60;
 	break;
 
-	case 93:
-	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 20 * 60;
+	case 88:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 15 * 60;
 	break;
 	
-	case 113:
+	case 103:
 	scr_checkpoint();
 	break;
 	
-	case 113.5:
+	case 103.5:
 	scr_heartSpawn();
 	break;
 	
-	case 114:
+	case 104:
 	speedUp = true;
+	break;
+	
+	case 105.5:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireBallSpawn)) alarm[0] = 5 * 60;
+	break;
+
+	case 110.5:
+	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn))
+	{
+		alarm[0] = 5 * 60;
+		gapSize = 6;
+		
+	}
 	break;
 	
 }

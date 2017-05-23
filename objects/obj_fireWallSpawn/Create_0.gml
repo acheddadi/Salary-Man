@@ -12,7 +12,10 @@ var spacing = remainder / density;
 
 for (var i = 0; i < density; i++)
 {
-	position[i] = (2 * unit) + (spacing * i);
+	position[i] = (5/2 * unit) + (spacing * i);
 }
 
 timeElapsed = 0;
+
+MOVE_SPD = 7/3;
+spd = 0;
