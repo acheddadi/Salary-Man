@@ -329,6 +329,10 @@ switch (timeSeconds)
 	if (instance_exists(obj_runningMan)) instance_destroy(obj_runningMan);
 	scr_checkpoint();
 	break;
+	
+	case 70.5:
+	scr_checkpoint();
+	break;
 //================================================================
 // Heart spawn
 	case 71:
@@ -346,6 +350,18 @@ switch (timeSeconds)
 
 	case 93:
 	with (instance_create_layer(0, 0, "Enemies", obj_fireWallSpawn)) alarm[0] = 20 * 60;
+	break;
+	
+	case 113:
+	scr_checkpoint();
+	break;
+	
+	case 113.5:
+	scr_heartSpawn();
+	break;
+	
+	case 114:
+	speedUp = true;
 	break;
 	
 }

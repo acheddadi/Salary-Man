@@ -1031,14 +1031,6 @@
             }
         },
         {
-            "Key": "c7e09bb5-9c2e-404d-9fd1-831e7544019e",
-            "Value": {
-                "id": "404ab12d-ff0e-4cb6-b761-122b9b6f803f",
-                "resourcePath": "objects\\obj_fireSurface\\obj_fireSurface.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cb20fe50-b792-4366-9501-e2aa914776b0",
             "Value": {
                 "id": "5f76adba-1a18-4238-ab94-1204db82d142",
