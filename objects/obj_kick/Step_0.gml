@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Move speed
-currentSpeed = MOVE_SPD * obj_engine.gamespeed;
+currentSpeed = MOVE_SPD + (10 * obj_engine.gamespeed);
 
 speed = currentSpeed;
 

@@ -8,8 +8,8 @@ if (keyboard_check_pressed(vk_space))
 }
 
 // Terminal velocity
-if ((vspd < TERM_VEL) && !flip) vspd += (obj_engine.gamespeed * GRAV);
-if ((vspd > -TERM_VEL) && flip) vspd -= (obj_engine.gamespeed * GRAV);
+if ((vspd < TERM_VEL) && !flip) vspd += GRAV + obj_engine.gamespeed;
+if ((vspd > -TERM_VEL) && flip) vspd -= GRAV + obj_engine.gamespeed;
 
 // Floor check
 if (place_meeting(x, y + vspd, obj_collision))
