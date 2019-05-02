@@ -5,8 +5,9 @@
     "name": "Windows",
     "option_windows_allow_fullscreen_switching": false,
     "option_windows_borderless": false,
-    "option_windows_company_info": "Pyjama Games",
-    "option_windows_copyright_info": "(c) 2017 Pyjama Games",
+    "option_windows_company_info": "Ali Cheddadi",
+    "option_windows_copy_exe_to_dest": false,
+    "option_windows_copyright_info": "(c) 2017 Ali Cheddadi",
     "option_windows_description_info": "Windows Videogame Software",
     "option_windows_display_cursor": false,
     "option_windows_display_name": "Gravity Flip",
@@ -28,10 +29,10 @@
     "option_windows_texture_page": "4096x4096",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 5,
+        "build": 6,
         "major": 1,
         "minor": 0,
-        "revision": 5
+        "revision": 0
     },
     "option_windows_vsync": true
 }

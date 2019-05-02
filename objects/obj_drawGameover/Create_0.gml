@@ -52,3 +52,4 @@ switch (irandom_range(0, 13))
 }
 
 obj_engine.deathCount++;
+obj_engine.totalDeathCount++;

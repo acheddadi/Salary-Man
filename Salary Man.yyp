@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "5b5c8fe9-1480-4740-a736-816dfa29429c",
+            "Value": {
+                "id": "f4966d64-b9e3-473e-87d0-aaeadeaf54f7",
+                "resourcePath": "objects\\obj_endGame\\obj_endGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5bc48729-c4fc-405d-9807-00f7c318e162",
             "Value": {
                 "id": "3904c65b-7fe5-43c3-bb26-f0996bf4fa40",

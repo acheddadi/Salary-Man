@@ -14,9 +14,9 @@ SHAKE = 0;
 timeElapsed = 0;
 timeSeconds = 0;
 timeMinutes = 0;
-timeSinceGameOver = 0;
 checkpoint = 0;
 deathCount = 0;
+totalDeathCount = 0;
 
 // Timer
 instance_create_layer(0, 0, "Text", obj_drawTimer);

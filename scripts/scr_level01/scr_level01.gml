@@ -359,12 +359,8 @@ switch (timeSeconds)
 	scr_checkpoint();
 	break;
 	
-	case 116.5:
-	scr_heartSpawn();
-	break;
-	
 	case 117:
-	speedUp = true;
+	instance_create_layer(0, 0, "Text", obj_endGame);
 	break;
 	
 }

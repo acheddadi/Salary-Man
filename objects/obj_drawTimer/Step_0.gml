@@ -9,8 +9,8 @@ if (!destroy)
 else
 {
 	if (size > 0) size -= 0.1;
-	else instance_destroy();
+	else if (!endGame) instance_destroy();
 }
 
-if (obj_engine.gameover) destroy = true;
+if (obj_engine.gameover || endGame) destroy = true;
 timeElapsed++;

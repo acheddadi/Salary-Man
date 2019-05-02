@@ -35,12 +35,8 @@ switch (currentScreen)
 			}
 			break;
 			
-			// Options button
-			case 1:
-			break;
-			
 			// Quit button
-			case 2:
+			case 1:
 			game_end();
 			break;
 		}

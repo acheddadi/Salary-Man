@@ -3,4 +3,5 @@
 
 timeElapsed = 0;
 destroy = false;
+endGame = false;
 size = 0;
